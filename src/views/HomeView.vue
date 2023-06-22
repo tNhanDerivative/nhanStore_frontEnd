@@ -42,7 +42,7 @@ export default {
   mounted() {
     this.getLatestProducts()
 
-    document.title = 'Home | Djackets'
+    document.title = 'Nhan`s Store | Vuejs demo'
   },
   methods: {
     async getLatestProducts() {
