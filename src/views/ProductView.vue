@@ -14,7 +14,7 @@
             <div class="column is-3">
                 <h2 class="subtitle">Information</h2>
 
-                <p><strong>Price: </strong>${{ product.price }}</p>
+                <p><strong>Price: </strong>{{formatPrice() }}</p>
 
                 <div class="field has-addons mt-6">
                     <div class="control">
@@ -46,6 +46,11 @@ export default {
         this.getProduct() 
     },
     methods: {
+        formatPrice(){
+            const number = this.product.price;
+
+            return new Intl.NumberFormat('vn-VN', { style: 'currency', currency: 'VND' }).format(number);
+        },
         async getProduct() {
             this.$store.commit('setIsLoading', true)
 

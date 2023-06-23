@@ -44,6 +44,11 @@
     },
     "rules": {}
   },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
