@@ -40,7 +40,7 @@ export default {
     ProductBox
   },
   mounted() {
-    console.log(process.env.VUE_APP_BASE_URL)
+    console.log(process.env.BASE_URL)
     this.getLatestProducts()
     
 
