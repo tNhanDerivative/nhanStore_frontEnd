@@ -40,7 +40,9 @@ export default {
     ProductBox
   },
   mounted() {
+    console.log(process.env.VUE_APP_BASE_URL)
     this.getLatestProducts()
+    
 
     document.title = 'Nhan`s Store | Vuejs demo'
   },
