@@ -33,8 +33,8 @@
         </div>
 
         <div class="navbar-end">
-          <router-link to="/" class="navbar-item">placeholder</router-link>
-          <router-link to="/" class="navbar-item">Headphones</router-link>
+          <router-link to="/work-space-products" class="navbar-item">Work space stuff</router-link>
+          <router-link to="/headphones" class="navbar-item">Headphones</router-link>
 
           <div class="navbar-item">
             <div class="buttons">
