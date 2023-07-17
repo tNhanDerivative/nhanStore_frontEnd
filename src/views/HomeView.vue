@@ -1,15 +1,5 @@
 <template>
   <div class="home">
-    <section class="hero is-medium is-dark mb-6">
-        <div class="hero-body has-text-centered">
-            <p class="title mb-6">
-                Welcome to NoobStore
-            </p>
-            <p class="subtitle">
-                The most honest store online don't sell you anything
-            </p>
-        </div>
-    </section>
 
     <div class="columns is-multiline">
       <div class="column is-12">
