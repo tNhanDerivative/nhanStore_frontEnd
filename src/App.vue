@@ -1,6 +1,6 @@
 <template>
   <div id="wrapper">
-    <nav class="navbar is-dark">
+    <nav class="navbar is-danger">
       <div class="navbar-brand">
         <router-link to="/" class="navbar-item"><strong>NoobStore</strong></router-link>
 
@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="control">
-                  <button class="button is-success">
+                  <button class="button is-warning">
                       <span class="icon">
                       <i class="fas fa-search"></i>
                       </span>
@@ -33,8 +33,8 @@
         </div>
 
         <div class="navbar-end">
-          <router-link to="/work-space-products" class="navbar-item">Work space stuff</router-link>
-          <router-link to="/headphones" class="navbar-item">Headphones</router-link>
+          <router-link to="/work-space-products" class="navbar-item"><strong>Work space stuff</strong></router-link>
+          <router-link to="/headphones" class="navbar-item"><strong>Headphones</strong></router-link>
 
           <div class="navbar-item">
             <div class="buttons">
@@ -46,7 +46,7 @@
                 <router-link to="/log-in" class="button is-light">Log in</router-link>
               </template>
 
-              <router-link to="/cart" class="button is-success">
+              <router-link to="/cart" class="button is-warning">
                 <span class="icon"><i class="fas fa-shopping-cart"></i></span>
                 <span>Cart ({{ cartTotalLength }})</span>
               </router-link>
@@ -65,7 +65,26 @@
     </section>
 
     <footer class="footer">
-      <p class="has-text-centered">Copyright (c) 2021</p>
+      <p class="has-text-centered">You can find me here</p>
+      <div class="has-text-centered">
+        <a href="https://www.linkedin.com/in/trong-nhan-nguyen-a3b0231b4/" class="fa fa-linkedin is-inline-block"></a>
+        <a href="https://github.com/tNhanDerivative" class="fa fa-github"></a>
+      </div>
+
+<!--
+      <ul class="has-text-centered">
+        <li class="is-inline-block">
+          <a href="https://www.linkedin.com/in/trong-nhan-nguyen-a3b0231b4/" class="fa fa-linkedin"></a>
+        </li>
+        <li class="is-inline-block">
+          <a href="https://github.com/tNhanDerivative" class="fa fa-github"></a>
+        </li>
+      </ul>
+-->      
+      
+        
+
+
     </footer>
   </div>
 </template>
@@ -151,4 +170,28 @@ export default {
     height: 80px;
   }
 }
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  color: #007bb5;
+}
+
+.fa-github {
+  color: black;
+}
+
+
 </style>
